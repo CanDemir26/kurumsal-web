@@ -1,206 +1,180 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    box-sizing: border-box;
+body {
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-    color: #000000;
-    list-style-type: none;
+a {
+  text-decoration: none;
+  color: #000000;
+  list-style-type: none;
 }
 
-.sm-font{
-    font-size: 0.80rem;
+/* Frequently used classes */
+
+.sm-font {
+  font-size: 0.8rem;
 }
 
-.md-font{
-    font-size:0.70rem;
+.md-font {
+  font-size: 0.7rem;
 }
 
-.prod-img{
+.prod-img {
+  width: 100%;
+}
+
+.logo-img {
+  width: 120px;
+  height: 70px;
+}
+
+/* Main container. */
+
+.container {
+  background-color: #f4f4f4;
+  height: 100%;
+}
+
+#header {
+  width: 100%;
+  height: 11vh;
+  background-color: whitesmoke;
+  box-shadow: #f78f1e;
+}
+
+.btn {
+  background-color: whitesmoke;
+  color: black;
+  width: auto;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.btn:hover {
+  background-color: #f78f1e;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.detail-btn {
+  height: 30px;
+}
+
+Section {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 7px;
+}
+
+#sidebar {
+  background-color: #ffff;
+  width: 30%;
+  margin-right: 10px;
+}
+
+#main {
+  width: 60%;
+  margin-left: 10px;
+}
+
+.carousel-item {
+  height: 20%;
+  background-color: black;
+}
+
+.accordion-button {
+  font-size: 1rem;
+  justify-content: center;
+}
+
+.prod-info {
+  font-size: 0.65rem;
+  padding-top: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  justify-content: space-around;
+}
+
+/* Magnifying icon styling. */
+.mgnf-icon {
+  width: 60px;
+  height: 60px;
+}
+
+#footer {
+  width: 100%;
+  height: 250px;
+  background-color: #252525;
+}
+
+.col {
+  border: 0.3px solid black;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.adress {
+  width: 30%;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+  .prod-img {
     width: 100%;
-}
+  }
 
-.logo-img{
-    width: 120px;
-    height: 70px;
-    
-}
+  .prod-info {
+    font-size: 0.5rem;
+  }
 
-.container{
-    background-color: #f4f4f4;
-    height: 100%;
-}
+  .accordion-button {
+    font-size: 0.5rem;
+  }
 
-#header{
-    width: 100%;
-    height: 11vh;
-    background-color: whitesmoke;
-    box-shadow: #f78f1e;
-}
-
-.btn{
-    background-color: whitesmoke;
-    color: black;
-    width: auto;
-    height: 40px;
-    margin-right: 20px;
-}
-
-.btn:hover{
-    background-color: #f78f1e;
-    color: #FFFFFF;
-    border-color: #FFFFFF;
-}
-
-.details .btn{
-    height: 30px;
-}
-
-.dropdown-menu{
-    text-align: center;
-}
-
-Section{
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    margin-top: 7px;
-}
-
-#sidebar{
-    background-color: #ffff;
+  #sidebar {
     width: 30%;
-    margin-right: 10px
-    
-}
+  }
 
-#main{
+  #main {
     width: 60%;
-    margin-left: 10px;
-}
+  }
 
-.carousel-item{
-    height: 20%;
-    background-color: black;
-}
+  .list-group-item {
+    font-size: 0.35rem;
+  }
 
-.accordion-button{
- font-size: 1rem;
- justify-content: center;
-}
+  .details .btn {
+    width: auto;
+    height: auto;
+  }
 
-.prod-info{
-    font-size: 0.65rem;
-    padding-top: 10px;
-    
-}
+  .sm-font {
+    font-size: 0.35rem;
+  }
 
-.details{
-   
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    justify-content: space-around;
-    
-}
+  .row-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+  }
 
-#footer{
-    width: 100%;
-    height: 250px;
-    background-color: #252525;
-}
-
-.col{
-    border: 0.3px solid black;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    margin-bottom: 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-    
-}
-
-
-
-.adress{
-    width: 30%;
-}
-
-
-@media screen and (max-width:600px) {
-    .prod-img{
-        width: 100%;
-    }
-
-    .prod-info{
-        font-size: 0.50rem;
-    }
-
-    .accordion-button{
-        font-size: 0.50rem;
-    }
-
-    #sidebar{
-        width: 30%;
-    }
-
-    #main{
-        width: 60%;
-    }
-
-    .list-group-item{
-        font-size: 0.35rem;
-    }
-
-    
-
-    .details .btn{
-       
-        width: auto;
-        height: auto;
-        
-              
-    }
-
-    .sm-font{
-        font-size: 0.35rem;
-    }
-
-    .row-cols-2{
-        grid-template-columns: repeat(2,1fr);
-        gap: 2rem;
-        justify-items: center;
-       
-        
-        
-    }
-
-    .col{
+  .col {
     width: 40%;
     height: 40%;
-    
-    }
-   
-
-    
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
