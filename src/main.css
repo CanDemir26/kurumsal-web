@@ -24,7 +24,8 @@ a {
 }
 
 .prod-img {
-  width: 100%;
+  width: 100px;
+  height: 80px;
 }
 
 .logo-img {
@@ -75,6 +76,7 @@ Section {
   background-color: #ffff;
   width: 30%;
   margin-right: 10px;
+  height: 400px;
 }
 
 #main {
@@ -92,6 +94,8 @@ Section {
   justify-content: center;
 }
 
+
+
 .prod-info {
   font-size: 0.65rem;
   padding-top: 10px;
@@ -107,8 +111,15 @@ Section {
 
 /* Magnifying icon styling. */
 .mgnf-icon {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
+  background:local;
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #ffffff;
+  
 }
 
 #footer {
@@ -118,18 +129,26 @@ Section {
 }
 
 .col {
-  border: 0.3px solid black;
+  border: 0.3px solid 	#a1a1a1;
   border-radius: 10px;
   background-color: #ffffff;
-  margin-bottom: 10px;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 20px;
   text-align: center;
+  width: 18%;
+  margin-left: 45px;
 }
 
 .adress {
   width: 30%;
 }
+
+.mgnf-prodImg{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
 
 /* Responsive */
 
@@ -169,12 +188,17 @@ Section {
 
   .row-cols-2 {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    display: grid;
     justify-items: center;
-  }
+    }
 
   .col {
-    width: 40%;
-    height: 40%;
+    width: 90%;
+    height: 90%;
+    margin-left: -11px;
+  }
+
+  .mgnf-icon{
+    right: -15px;
   }
 }
